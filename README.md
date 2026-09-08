@@ -158,7 +158,7 @@ Multi-agent GST reconciliation platform.
 <p align="center">
   <img
     height="170"
-    src="https://github-readme-stats.vercel.app/api?username=sanchitmoh&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true"
+    src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=sanchitmoh&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true"
     alt="GitHub Stats"
   />
   <img
@@ -171,7 +171,7 @@ Multi-agent GST reconciliation platform.
 <p align="center">
   <img
     height="170"
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=sanchitmoh&layout=compact&theme=tokyonight&hide_border=true&langs_count=8"
+    src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=sanchitmoh&layout=compact&theme=tokyonight&hide_border=true&langs_count=8"
     alt="Top Languages"
   />
 </p>
@@ -182,7 +182,7 @@ Multi-agent GST reconciliation platform.
 
 <p align="center">
   <img
-    src="https://raw.githubusercontent.com/sanchitmoh/sanchitmoh/output/github-contribution-grid-snake.svg"
+    src="https://raw.githubusercontent.com/sanchitmoh/sanchitmoh/gh-pages/github-contribution-grid-snake.svg"
     alt="GitHub Contribution Snake"
   />
 </p>

@@ -77,40 +77,94 @@
 
 ---
 
-## 🚀 Featured Projects
+## 🚀 Featured Engineering Projects
+
+<p align="center">
+  <em>Architected for high concurrency, low latency, and distributed intelligence.</em>
+</p>
 
 <table>
 <tr>
 
 <td width="50%" valign="top">
 
-### 💳 Evenza — Event Management Platform
+<div align="center">
+  <a href="https://github.com/sanchitmoh/Evenzaa">
+    <img src="https://img.shields.io/badge/Project-Evenza_Event_Platform-00C6FF?style=for-the-badge&logo=spring&logoColor=white&labelColor=0F2027" width="100%"/>
+  </a>
+</div>
 
-Microservices-based event booking platform built with Spring Boot.
+### 🎟️ [Evenza — Event Booking Platform](https://github.com/sanchitmoh/Evenzaa)
+> *Microservices-based event ticketing platform engineered for zero overselling and high concurrent throughput.*
 
-- Razorpay payment integration
-- Idempotent refund workflows
-- Redis caching for seat availability
-- Row-level locking for concurrent bookings
-- **~40% lower seat-check latency**
+<p>
+  <img src="https://img.shields.io/badge/Latency-~40%25_Lower-00C6FF?style=flat-square&logo=speedtest&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Transactions-Idempotent-success?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Locking-Row--Level-blue?style=flat-square"/>
+</p>
 
-`Spring Boot` `Redis` `Docker` `JWT` `JUnit`
+- ⚡ **Redis In-Memory Caching:** Slashed seat availability query response time by **~40%** under peak traffic.
+- 🔒 **Race-Condition Elimination:** Database row-level pessimistic locking (`PESSIMISTIC_WRITE`) guarantees zero double-bookings.
+- 💳 **Resilient Payments:** Razorpay webhook handling with automated, idempotent refund workflows and state machines.
+
+<details>
+  <summary><b>🔍 Deep Dive: Architecture & Engineering</b></summary>
+
+  - **Concurrency Model:** Redis atomic decrements for instant seat availability verification coupled with transactional database locks at checkout.
+  - **Modular Architecture:** Spring Boot backend with clean layered design (Controllers, Services, Repositories, DTOs).
+  - **Security & Integrity:** Stateless JWT authentication with role-based access control (RBAC) and BCrypt password hashing.
+</details>
+
+<br/>
+
+<div align="center">
+  <a href="https://github.com/sanchitmoh/Evenzaa"><img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white"/></a>
+  <a href="https://github.com/sanchitmoh/Evenzaa"><img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white"/></a>
+  <a href="https://github.com/sanchitmoh/Evenzaa"><img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/></a>
+  <a href="https://github.com/sanchitmoh/Evenzaa"><img src="https://img.shields.io/badge/Razorpay-02042B?style=flat-square&logo=razorpay&logoColor=3395FF"/></a>
+  <a href="https://github.com/sanchitmoh/Evenzaa"><img src="https://img.shields.io/badge/View_Repo_→-181717?style=flat-square&logo=github&logoColor=white"/></a>
+</div>
 
 </td>
 
 <td width="50%" valign="top">
 
-### 📚 Corporate Digital Library
+<div align="center">
+  <a href="https://github.com/sanchitmoh/corporate-digital-library-yv">
+    <img src="https://img.shields.io/badge/Project-Corporate_Digital_Library-00C6FF?style=for-the-badge&logo=elasticsearch&logoColor=white&labelColor=0F2027" width="100%"/>
+  </a>
+</div>
 
-Secure document management platform with RBAC and automated backups.
+### 📚 [Corporate Digital Library](https://github.com/sanchitmoh/corporate-digital-library-yv)
+> *Enterprise document lifecycle system featuring distributed search indexing and cloud persistence.*
 
-- Elasticsearch full-text search
-- **150–200ms search latency**
-- 10k+ documents
-- AWS S3 backups
-- Role-based access control
+<p>
+  <img src="https://img.shields.io/badge/Search_Latency-150--200ms-00C6FF?style=flat-square&logo=speedtest&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Scale-10k+_Docs-purple?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Storage-AWS_S3-orange?style=flat-square&logo=amazonaws&logoColor=white"/>
+</p>
 
-`Node.js` `Elasticsearch` `AWS S3` `MySQL`
+- 🔎 **Sub-Second Search:** Elasticsearch integration delivering **150–200ms query latency** across 10,000+ indexed enterprise documents.
+- ☁️ **Cloud Storage Pipeline:** Automated document versioning and storage pipeline backed by AWS S3 with signed retrieval URLs.
+- 🛡️ **Access Governance:** Granular RBAC enforcing document-level visibility policies and immutable audit trails.
+
+<details>
+  <summary><b>🔍 Deep Dive: Architecture & Engineering</b></summary>
+
+  - **Elasticsearch Ingestion:** Custom analyzer pipelines with multi-field tokenization, edge n-grams, and typo-tolerant fuzzy matching.
+  - **Storage Lifecycle:** Tiered document storage with automated scheduled backups to Amazon S3 buckets.
+  - **Relational Integrity:** Normalized MySQL schema optimized with composite indexes for fast permission checks.
+</details>
+
+<br/>
+
+<div align="center">
+  <a href="https://github.com/sanchitmoh/corporate-digital-library-yv"><img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white"/></a>
+  <a href="https://github.com/sanchitmoh/corporate-digital-library-yv"><img src="https://img.shields.io/badge/Elasticsearch-005571?style=flat-square&logo=elasticsearch&logoColor=white"/></a>
+  <a href="https://github.com/sanchitmoh/corporate-digital-library-yv"><img src="https://img.shields.io/badge/AWS_S3-569A31?style=flat-square&logo=amazons3&logoColor=white"/></a>
+  <a href="https://github.com/sanchitmoh/corporate-digital-library-yv"><img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white"/></a>
+  <a href="https://github.com/sanchitmoh/corporate-digital-library-yv"><img src="https://img.shields.io/badge/View_Repo_→-181717?style=flat-square&logo=github&logoColor=white"/></a>
+</div>
 
 </td>
 
@@ -120,36 +174,105 @@ Secure document management platform with RBAC and automated backups.
 
 <td width="50%" valign="top">
 
-### 📊 AI CFO — Financial Intelligence Platform
+<div align="center">
+  <a href="https://github.com/sanchitmoh/CFO">
+    <img src="https://img.shields.io/badge/Project-AI_CFO_Intelligence-00C6FF?style=for-the-badge&logo=openai&logoColor=white&labelColor=0F2027" width="100%"/>
+  </a>
+</div>
 
-AI-powered financial forecasting and CFO assistant.
+### 📊 [AI CFO — Financial Intelligence Platform](https://github.com/sanchitmoh/CFO)
+> *Autonomous financial intelligence copilot for predictive cash-flow forecasting and ledger anomaly detection.*
 
-- GPT-based RAG workflows
-- Payroll and cash-flow prediction
-- Anomaly detection
-- **~97% prediction accuracy**
+<p>
+  <img src="https://img.shields.io/badge/Prediction_Accuracy-~97%25-00C6FF?style=flat-square&logo=target&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Pipeline-GPT_RAG-success?style=flat-square&logo=openai&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Backend-FastAPI-teal?style=flat-square&logo=fastapi&logoColor=white"/>
+</p>
 
-`FastAPI` `RAG` `OpenAI` `PostgreSQL` `React`
+- 🧠 **Contextual RAG Pipelines:** Domain-adapted LLM agent querying structured balance sheets, invoices, and expense ledgers.
+- 🎯 **Predictive Precision:** Reached **~97% prediction accuracy** on multi-month payroll projections and cash-burn simulations.
+- 🚨 **Real-Time Anomaly Engine:** Outlier detection flagging unauthorized deviations and spend variance before reporting.
+
+<details>
+  <summary><b>🔍 Deep Dive: Architecture & Engineering</b></summary>
+
+  - **Retrieval Architecture:** Chunking & embedding pipeline converting financial statements into dense vector representations for grounded answers.
+  - **High-Throughput API:** Asynchronous FastAPI backend with strict Pydantic schemas and database connection pooling.
+  - **Observability:** Token usage tracking, latency telemetry, and guardrails to prevent hallucination in financial summaries.
+</details>
+
+<br/>
+
+<div align="center">
+  <a href="https://github.com/sanchitmoh/CFO"><img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white"/></a>
+  <a href="https://github.com/sanchitmoh/CFO"><img src="https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white"/></a>
+  <a href="https://github.com/sanchitmoh/CFO"><img src="https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white"/></a>
+  <a href="https://github.com/sanchitmoh/CFO"><img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB"/></a>
+  <a href="https://github.com/sanchitmoh/CFO"><img src="https://img.shields.io/badge/View_Repo_→-181717?style=flat-square&logo=github&logoColor=white"/></a>
+</div>
 
 </td>
 
 <td width="50%" valign="top">
 
-### 🧾 GST Agent Environment
+<div align="center">
+  <a href="https://github.com/sanchitmoh/GSTENV">
+    <img src="https://img.shields.io/badge/Project-GST_Agent_Environment-00C6FF?style=for-the-badge&logo=python&logoColor=white&labelColor=0F2027" width="100%"/>
+  </a>
+</div>
 
-Multi-agent GST reconciliation platform.
+### 🧾 [GST Agent Environment](https://github.com/sanchitmoh/GSTENV)
+> *OpenEnv simulation framework where autonomous agents execute complex tax reconciliation workflows.*
 
-- RAG-based document processing
-- Deterministic validation
-- Multi-agent workflow
-- Reduced reconciliation from **days to minutes**
+<p>
+  <img src="https://img.shields.io/badge/Turnaround-Days_→_Minutes-00C6FF?style=flat-square&logo=clock&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Matching-Deterministic-success?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Environment-OpenEnv-orange?style=flat-square"/>
+</p>
 
-`FastAPI` `Multi-Agent` `RAG` `Docker` `HuggingFace`
+- ⚡ **Order-of-Magnitude Speedup:** Compressed standard Indian tax reconciliation cycles from **several days down to minutes**.
+- 🧩 **Multi-Agent Deliberation:** Autonomous agents handling invoice parsing, Input Tax Credit (ITC) mismatch detection, and filing synthesis.
+- ⚖️ **Deterministic Guardrails:** Hard mathematical rules for tax math, using LLMs only for fuzzy edge cases and reason-coded summaries.
+
+<details>
+  <summary><b>🔍 Deep Dive: Architecture & Engineering</b></summary>
+
+  - **RL/Agent Environment:** Structured state-space mimicking real Indian GST portal rules, invoice schemas, and GSTR forms.
+  - **Automated Matching:** Three-way matching between vendor invoices, purchase registers, and portal data with audit-ready exception codes.
+  - **Modular Runtime:** Containerized Docker environment with HuggingFace integrations for offline evaluation.
+</details>
+
+<br/>
+
+<div align="center">
+  <a href="https://github.com/sanchitmoh/GSTENV"><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/></a>
+  <a href="https://github.com/sanchitmoh/GSTENV"><img src="https://img.shields.io/badge/Multi--Agent-FF6F00?style=flat-square"/></a>
+  <a href="https://github.com/sanchitmoh/GSTENV"><img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/></a>
+  <a href="https://github.com/sanchitmoh/GSTENV"><img src="https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black"/></a>
+  <a href="https://github.com/sanchitmoh/GSTENV"><img src="https://img.shields.io/badge/View_Repo_→-181717?style=flat-square&logo=github&logoColor=white"/></a>
+</div>
 
 </td>
 
 </tr>
 </table>
+
+<details>
+  <summary><b>🔥 Spotlight Project: AI-Powered 3-Way Reconciliation Agent (Razorpay / Banking)</b></summary>
+  <br/>
+
+  > Autonomous reconciliation system performing three-way matching between Razorpay transaction feeds, bank settlement statements, and internal ERP ledgers.
+
+  - 🎯 **Hybrid Matching Engine:** Employs 100% deterministic rules for standard transactions; routes ambiguous edge-cases to LLM agents.
+  - 🔍 **Explainability First:** Produces audit-ready, reason-coded exception logs rather than opaque verdicts.
+  - 🔗 **[Explore sanchitmoh/Razorpay on GitHub →](https://github.com/sanchitmoh/Razorpay)**
+</details>
+
+<p align="center">
+  <a href="https://github.com/sanchitmoh?tab=repositories">
+    <img src="https://img.shields.io/badge/Explore_All_Repositories_→-00C6FF?style=for-the-badge&logo=github&logoColor=black&labelColor=0F2027"/>
+  </a>
+</p>
 
 ---
 
